@@ -27,4 +27,12 @@ public class TaskServiceImpl implements TaskService {
 		return taskRepo.findByUserId(id);
 	}
 
+	@Override
+	public Task saveTask(Task task) {
+		// TODO Auto-generated method stub
+		return taskRepo.save(task);
+	}
+	
+	
+
 }
