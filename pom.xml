@@ -11,6 +11,7 @@
 	<groupId>com.demousers</groupId>
 	<artifactId>users</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>users</name>
 	<description>Demo microservicios spring boot</description>
 	<properties>

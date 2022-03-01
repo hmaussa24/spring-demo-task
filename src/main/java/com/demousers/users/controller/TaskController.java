@@ -17,7 +17,7 @@ import com.demousers.users.entities.Task;
 import com.demousers.users.services.TaskServiceImpl;
 
 @RestController
-@RequestMapping("api/tasks")
+@RequestMapping(path =  "api/tasks")
 public class TaskController {
 	
 	@Autowired

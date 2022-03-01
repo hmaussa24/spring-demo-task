@@ -17,7 +17,7 @@ import com.demousers.users.entities.User;
 import com.demousers.users.services.UsuarioServiceImpl;
 
 @RestController
-@RequestMapping("api/users")
+@RequestMapping(path =  "api/users")
 public class UserControlller {
 
 	@Autowired
