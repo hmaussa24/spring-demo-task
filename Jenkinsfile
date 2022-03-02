@@ -8,7 +8,7 @@ pipeline {
 	stages {
 		stage('Cloning our Git') {
 			steps {
-				git 'https://github.com/hmaussa24/demo-jenkins.git'
+				git 'https://icloudseven.visualstudio.com/IC7%20MICROSERVICES/_git/IC7-MICROSERVICE-BACK'
 			}
 		}
 		stage('Building our image') {
