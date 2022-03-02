@@ -37,5 +37,10 @@ public class TaskController {
 	public ResponseEntity<?> saveTask(@RequestBody Task task){
 		return ResponseEntity.status(HttpStatus.CREATED).body(taskService.saveTask(task));
 	}
+	
+	@GetMapping(path = "/delete/{id}")
+	public void deleteTask(@PathVariable("id") Long id){
+		taskService.deleteTask(id);
+	}
 
 }

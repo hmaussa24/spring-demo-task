@@ -33,6 +33,10 @@ public class TaskServiceImpl implements TaskService {
 		return taskRepo.save(task);
 	}
 	
+	public void deleteTask(Long id) {
+		taskRepo.deleteById(id);
+	}
+	
 	
 
 }
