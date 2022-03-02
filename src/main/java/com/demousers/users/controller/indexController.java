@@ -10,7 +10,7 @@ public class indexController {
 
 	@GetMapping()
 	public String Index() {
-		return "Api succes";
+		return "Api succes in docker container";
 	}
 
 }
