@@ -1,7 +1,7 @@
 pipeline {
 	environment {
-		registry = "hmaussa1/demo"
-		registryCredential = 'dockerhub'
+		registry = "task-app-back"
+		registryCredential = 'acr'
 		dockerImage = ''
 	}
 	agent any
@@ -22,7 +22,7 @@ pipeline {
 		stage('Deploy our image') {
 			steps{
 				script {
-					docker.withRegistry( '', registryCredential ) {
+					docker.withRegistry( 'https://ic7cr01.azurecr.io/', registryCredential ) {
 					dockerImage.push()
 					}
 				}
